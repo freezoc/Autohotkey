@@ -25,15 +25,19 @@ LCtrl & f::Send {Right}
 !+n::Send ^+n
 
 
-;输入时间
-CapsLock & t::send %A_YYYY%.%A_MM%.%A_DD%
-
-
 ;文本替换
 :*:{}::〔2019〕
 :*:<>::<>{Left}
 :*:()::(){Left}
 :*:""::“”{Left}
+
+
+;CapsLock功能
+;输入时间
+CapsLock & t::Send %A_YYYY%.%A_MM%.%A_DD%
+;启动程序
+CapsLock & e::Send !e ;Everything
+CapsLock & c::Send ^{sc029} ;Ditto({sc029}代表`)
 
 
 ;wps表格

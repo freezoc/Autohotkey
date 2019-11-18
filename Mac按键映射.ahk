@@ -38,6 +38,7 @@ CapsLock & t::Send %A_YYYY%.%A_MM%.%A_DD%
 ;启动程序
 CapsLock & e::Send !e ;Everything
 CapsLock & c::Send ^{sc029} ;Ditto({sc029}代表`)
+#Space::#s ;将Listary与Alfred快捷键一致
 
 
 ;wps表格

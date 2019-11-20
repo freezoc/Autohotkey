@@ -43,6 +43,6 @@ CapsLock & c::Send ^{sc029} ;Ditto({sc029}代表`)
 
 ;wps表格
 #IfWinActive, ahk_exe et.exe
-CapsLock & h::Send ^m ;一般合并（删除数据）
-CapsLock & s::Send !hlf ;一般合并（删除数据）
-LAlt & m::Send !hmn ;合并单元格（不删除数据）
+CapsLock & h::Send ^m ;一般合并（删除其他行数据，再次点击可拆分还原）
+CapsLock & s::Send !hlf ;筛选
+LAlt & m::Send !hmn ;合并单元格（不删除数据，再次点击不可拆分还原）

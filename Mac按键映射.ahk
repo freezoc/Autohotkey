@@ -33,8 +33,9 @@ LCtrl & f::Send {Right}
 
 
 ;CapsLock功能
-;输入时间
-CapsLock & t::Send %A_YYYY%.%A_MM%.%A_DD%
+CapsLock::Send ^ ;CapsLock调整为Ctrl
+CapsLock & t::Send %A_YYYY%.%A_MM%.%A_DD% ;输入时间
+
 ;启动程序
 CapsLock & e::Send !e ;Everything
 CapsLock & c::Send ^{sc029} ;Ditto({sc029}代表`)

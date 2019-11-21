@@ -24,6 +24,7 @@
     LAlt & s::Send ^s ;Save
     LAlt & f::Send ^f ;Find
     LAlt & p::Send ^p ;Print
+    LAlt & b::Send ^b ;Bold
 
     !+n::Send ^+n ;新建文件夹
 

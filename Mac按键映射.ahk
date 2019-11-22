@@ -44,7 +44,6 @@
 
 
 ;CapsLock功能
-    CapsLock::Send ^ ;CapsLock调整为Ctrl
     CapsLock & t::Send %A_YYYY%.%A_MM%.%A_DD% ;输入时间
 
 ;启动程序

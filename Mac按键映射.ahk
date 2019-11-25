@@ -10,6 +10,7 @@
 
 ; Ctrl与Alt互换
     LAlt & t::Send ^t ;New Tab
+    LAlt & r::Send {F5} ;Refresh
     LAlt & w::Send ^{F4} ;Close Tab
     LAlt & q::Send !{F4} ;Close Windows
 

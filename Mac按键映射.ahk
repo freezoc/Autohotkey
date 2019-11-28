@@ -51,6 +51,7 @@
     CapsLock & e::Send !e ;Everything
     CapsLock & c::Send ^{sc029} ;Ditto({sc029}代表`)
     CapsLock & w::Send !^w ;打开微信
+    CapsLock & q::Send !^z ;打开qq
     #Space::#s ;将Listary与Alfred快捷键一致
 
 

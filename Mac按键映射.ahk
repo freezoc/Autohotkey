@@ -35,6 +35,11 @@
     LCtrl & n::Send {Down}
     LCtrl & b::Send {Left}
     LCtrl & f::Send {Right}
+
+    Space & i:: Send {up}
+    Space & j:: Send {left}
+    Space & k:: Send {down}
+    Space & l:: Send {right}
     
 
 ;文本替换

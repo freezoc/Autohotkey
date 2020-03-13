@@ -7,7 +7,33 @@
 
 #InstallKeybdHook
 
+Process, Priority, , High
 
+;CapsLock功能
+    SetCapsLockState, Alwaysoff
+
+    ;输入时间
+        CapsLock & t::Send %A_YYYY%.%A_MM%.%A_DD% 
+
+    ;启动程序
+        CapsLock & e::Send !e ;Everything
+        CapsLock & c::Send ^{sc029} ;Ditto({sc029}代表`)
+        CapsLock & w::Send !^w ;打开微信
+        CapsLock & q::Send !^z ;打开qq
+        #Space::#s ;将Listary与Alfred快捷键一致
+
+    ;方向键
+        LCtrl & p::Send {Up}
+        LCtrl & n::Send {Down}
+        LCtrl & b::Send {Left}
+        LCtrl & f::Send {Right}
+
+        CapsLock & i::Send {Up}
+        CapsLock & k::Send {Down}
+        CapsLock & j::Send {Left}
+        CapsLock & l::Send {Right}
+
+        
 ; Ctrl与Alt互换
     LAlt & t::Send ^t ;New Tab
     LAlt & r::Send {F5} ;Refresh
@@ -30,34 +56,11 @@
     !+n::Send ^+n ;新建文件夹
 
 
-;方向键
-    LCtrl & p::Send {Up}
-    LCtrl & n::Send {Down}
-    LCtrl & b::Send {Left}
-    LCtrl & f::Send {Right}
-
-    CapsLock & i::Send {Up}
-    CapsLock & k::Send {Down}
-    CapsLock & j::Send {Left}
-    CapsLock & l::Send {Right}
-
 ;文本替换
     :*:{}::〔2020〕
     :*:<>::<>{Left}
     :*:()::(){Left}
     :*:""::“”{Left}
-
-
-;CapsLock功能
-;    CapsLock :: Esc
-    CapsLock & t::Send %A_YYYY%.%A_MM%.%A_DD% ;输入时间
-
-    ;启动程序
-        CapsLock & e::Send !e ;Everything
-        CapsLock & c::Send ^{sc029} ;Ditto({sc029}代表`)
-        CapsLock & w::Send !^w ;打开微信
-        CapsLock & q::Send !^z ;打开qq
-        #Space::#s ;将Listary与Alfred快捷键一致
 
 
 ;wps表格

@@ -60,7 +60,7 @@ Process, Priority, , High
     :*:{}::〔2020〕
     :*:<::<>{Left}
     :*:(::(){Left}
-    :*:"::“”{Left}
+    :*:"::""{Left}
 
 
 ;wps表格

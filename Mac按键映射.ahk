@@ -10,28 +10,22 @@
 Process, Priority, , High
 
 ;CapsLock功能
-    SetCapsLockState, Alwaysoff
+    SetCapsLockState, Alwaysoff ;禁用CapsLock
 
-    ;输入时间
-        CapsLock & t::Send %A_YYYY%.%A_MM%.%A_DD% 
+    CapsLock & t::Send %A_YYYY%.%A_MM%.%A_DD% ;输入时间
 
     ;启动程序
-        CapsLock & e::Send !e ;Everything
-        CapsLock & c::Send ^{sc029} ;Ditto({sc029}代表`)
-        CapsLock & w::Send !^w ;打开微信
-        CapsLock & q::Send !^z ;打开qq
-        #Space::#s ;将Listary与Alfred快捷键一致
+    CapsLock & e::Send !e ;Everything
+    CapsLock & c::Send ^{sc029} ;Ditto({sc029}代表`)
+    CapsLock & w::Send !^w ;打开微信
+    CapsLock & q::Send !^z ;打开qq
+    #Space::#s ;将Listary与Alfred快捷键一致
 
     ;方向键
-        LCtrl & p::Send {Up}
-        LCtrl & n::Send {Down}
-        LCtrl & b::Send {Left}
-        LCtrl & f::Send {Right}
-
-        CapsLock & i::Send {Up}
-        CapsLock & k::Send {Down}
-        CapsLock & j::Send {Left}
-        CapsLock & l::Send {Right}
+    CapsLock & i::Send {Up}
+    CapsLock & k::Send {Down}
+    CapsLock & j::Send {Left}
+    CapsLock & l::Send {Right}
 
         
 ; Ctrl与Alt互换
@@ -53,7 +47,9 @@ Process, Priority, , High
     LAlt & p::Send ^p ;Print
     LAlt & b::Send ^b ;Bold
 
+    ;使用符号可以避免按键冲突的情况
     !+n::Send ^+n ;新建文件夹
+    !n::Send ^n ;新建
 
 
 ;文本替换

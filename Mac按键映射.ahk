@@ -62,5 +62,11 @@ Process, Priority, , High
 ;wps表格
     #IfWinActive, ahk_exe et.exe
     CapsLock & h::Send ^m ;一般合并（删除其他行数据，再次点击可拆分还原）
-    CapsLock & s::Send !hlf ;筛选
     LAlt & m::Send !hmn ;合并单元格（不删除数据，再次点击不可拆分还原）
+    CapsLock & s::Send !at ;筛选
+    CapsLock & f::Send !wff ;冻结
+
+
+;wps文档
+    #IfWinActive, ahk_exe wps.exe
+    CapsLock & h::Send !hi{Enter} ;highlight
